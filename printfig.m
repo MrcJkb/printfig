@@ -111,7 +111,7 @@ elseif nargin == 2
 end
 
 %check for file extension in file name and delete
-if strcmp(filename(end-3),'.')
+if numel(filename) > 4 && strcmp(filename(end-3),'.')
     filename = filename(1:end-4);
 end
 %list of possible file types + expandaxes option

@@ -207,8 +207,8 @@ if FTs(2) %emf
         h.Color = 'none';
         setaxbcol(AX,'none')
         set(h,'InvertHardcopy','off')
-        set(h,'renderer','painter');
     end
+    set(h,'renderer','painter');
     print(h,[filename,'.emf'],'-dmeta');
 end
 if FTs(3) %eps
